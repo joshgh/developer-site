@@ -19,28 +19,38 @@ div#title {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-left: 5px;
+  padding-left: 10px;
   background-color: black;
 }
 
 div.main-content {
   padding-top: 130px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
-  color: lightgrey;
+  color: white;
   cursor: pointer;
-  border: 2px solid lightgrey;
-  border-radius: 2px;
+}
+
+a.half-button {
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   padding: 3px;
 }
 
+a:hover {
+  background-color: black;
+}
+
 div.project-card {
-  margin: 5px 0;
-  border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 5px 15px;
+  transition: background-color 0.5s;
+}
+
+div.project-card:hover {
+  background-color: #298959;
 }
