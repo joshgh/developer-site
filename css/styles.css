@@ -8,8 +8,13 @@ html, body {
   margin: 0;
 }
 
+html {
+  background-image: url('../images/foggy-forest.jpeg');
+  background-size: cover;
+}
+
 body {
-  background-color: #39BD7B;
+  background-color: rgba(57, 189, 123, 0.7);
   color: white;
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
