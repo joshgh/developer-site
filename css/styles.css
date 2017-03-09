@@ -4,18 +4,20 @@
 
 html, body {
   width: 100%;
-  height: 100%;
   margin: 0;
 }
 
 html {
+  height: 100%;
   background-image: url('../images/foggy-forest.jpeg');
   background-size: cover;
 }
 
 body {
+  min-height: 100%;
   background-color: rgba(57, 189, 123, 0.7);
   color: white;
+  font-size: 16px;
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
 }
@@ -26,11 +28,11 @@ div#title {
   width: 100%;
   padding-left: 10px;
   background-color: black;
+  z-index: 1;
 }
 
 div.main-content {
   padding-top: 130px;
-  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -48,14 +50,20 @@ a.half-button {
 
 a:hover {
   background-color: black;
+  color: white;
 }
 
 div.project-card {
   border-bottom: 1px solid white;
+  margin-bottom: 10px;
   padding: 5px 15px;
   transition: background-color 0.5s;
 }
 
 div.project-card:hover {
   background-color: #298959;
+}
+
+div.profile-links {
+  margin-bottom: 10px;
 }
