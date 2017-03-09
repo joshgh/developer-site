@@ -4,7 +4,7 @@
 
 html, body {
   width: 100%;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 html {
@@ -51,6 +51,16 @@ a.half-button {
 a:hover {
   background-color: black;
   color: white;
+  text-decoration: none;
+}
+
+a.link-inline {
+  text-decoration: underline;
+}
+
+a.link-inline:hover {
+  text-decoration: underline;
+  background-color: black;
 }
 
 div.project-card {
@@ -66,4 +76,10 @@ div.project-card:hover {
 
 div.profile-links {
   margin-bottom: 10px;
+}
+
+img#qr-vcard {
+  width: 440px;
+  max-width: 100vmin;
+  height: auto;
 }

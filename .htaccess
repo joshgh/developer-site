@@ -1,0 +1,6 @@
+<FilesMatch "\.vcf$">
+  ForceType text/vcard
+  <IfModule mod_headers.c>
+    Header set Content-Disposition attachment
+  </IfModule>
+</FilesMatch>
