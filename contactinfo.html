@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Information</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+  </head>
+  <body>
+      <a href="index.html">
+        <div id="title">
+          <h1>Joshua Huffman</h1>
+          <h2>Web Developer</h2>
+        </div>
+      </a>
+      <div class="main-content text-center">
+          <h1>Contact Information</h1>
+          <h3>Scan the image below with a QR reader to save my contact information</h3>
+          <img id="qr-vcard" src="images/joshhuffman.vcard.qr.svg">
+          <h3>- or -</h3>
+          <h3>Submit this form to have my information emailed to you:</h3>
+          <form id="contact-info" method="post" action="mailcontact.php">
+            <div class="form-group">
+              <label for="form_name">Your name:</label>
+              <input id="form_name"  class="form-control" name="form_name">
+            </div>
+            <div class="form-group">
+              <label for="form_email">Your email address:</label>
+              <input id="form_email" class="form-control" name="form_email">
+            </div>
+              <input style="display:none" name="message">
+              <input class="btn btn-primary" type="submit" value="Submit">
+          </form>
+          <h3>- or -</h3>
+          <div>
+              <h3><a class="link-inline" href="files/joshua_huffman.vcf" download>Click</a> to download vCard contact information</h3>
+          </div>
+      </div>
+      <br>
+  </body>
+</html>

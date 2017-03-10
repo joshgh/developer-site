@@ -83,3 +83,14 @@ img#qr-vcard {
   max-width: 100vmin;
   height: auto;
 }
+
+input {
+  color: black;
+  font-family: sans-serif;
+}
+
+form#contact-info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
