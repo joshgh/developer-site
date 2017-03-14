@@ -4,3 +4,8 @@
     Header set Content-Disposition attachment
   </IfModule>
 </FilesMatch>
+
+<Files "siteconfig.php">
+  Require all denied
+</Files>
+
