@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
        $message = Swift_Message::newInstance('Contact Info')
          ->setFrom(array('j.m.huffman@gmail.com' => 'Joshua Huffman'))
          ->setTo(array($submitted_email => $submitted_name))
-         ->setBody("Thanks for coming to Epicodus Demo Days!\r\n\r\nJoshua Huffman\r\nJunior Web Developer\r\nPortland, Oregon\r\nj.m.huffman@gmail.com\r\nLinkedIn: linkedin.com/in/joshua-huffman\r\nGitHub: github.com/joshgh", 'text/plain')
+         ->setBody("Thanks for your interest!\r\n\r\nJoshua Huffman\r\nJunior Web Developer\r\nPortland, Oregon\r\nj.m.huffman@gmail.com\r\nLinkedIn: linkedin.com/in/joshua-huffman\r\nGitHub: github.com/joshgh", 'text/plain')
          ;
 
        // Send the message
