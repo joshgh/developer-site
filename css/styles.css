@@ -64,6 +64,10 @@ a, a:hover {
   color: white;
 }
 
+.link--inline, .link--inline:hover {
+  text-decoration: underline;
+}
+
 .project-list {
   margin-bottom: 10px;
   margin-top: 10px;
