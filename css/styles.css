@@ -19,9 +19,14 @@ body {
   min-height: 100%;
   background-color: rgba(57, 189, 123, 0.85);
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
+}
+
+a, a:hover {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .titlebar {
@@ -59,9 +64,13 @@ body {
   color: white;
 }
 
+.project-list {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .project-card {
   border-bottom: 1px solid white;
-  margin-bottom: 10px;
   padding: 5px 15px;
   transition: background-color 0.5s;
 }
@@ -105,4 +114,8 @@ form#contact-info {
 
 .logo--linkedin-logo {
   background-image: url('../images/In-White-66px-R.png');
+}
+
+.project-card__title {
+  text-decoration: underline;
 }
