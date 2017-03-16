@@ -11,18 +11,20 @@ html {
   height: 100%;
   background-image: url('../images/foggy-forest.jpeg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
   min-height: 100%;
-  background-color: rgba(57, 189, 123, 0.7);
+  background-color: rgba(57, 189, 123, 0.85);
   color: white;
   font-size: 16px;
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
 }
 
-div#title {
+.titlebar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -31,50 +33,44 @@ div#title {
   z-index: 1;
 }
 
-div.main-content {
+.main-content {
   padding-top: 130px;
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+.link {
   color: white;
   cursor: pointer;
 }
 
-a.half-button {
+.link--half-button {
+  text-decoration: none;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   padding: 3px;
 }
 
-a:hover {
-  background-color: black;
-  color: white;
+.link--half-button:hover {
   text-decoration: none;
 }
 
-a.link-inline {
-  text-decoration: underline;
-}
-
-a.link-inline:hover {
-  text-decoration: underline;
+.link:hover {
   background-color: black;
+  color: white;
 }
 
-div.project-card {
+.project-card {
   border-bottom: 1px solid white;
   margin-bottom: 10px;
   padding: 5px 15px;
   transition: background-color 0.5s;
 }
 
-div.project-card:hover {
+.project-card:hover {
   background-color: #298959;
 }
 
-div.profile-links {
+.profile-links {
   margin-bottom: 10px;
 }
 
