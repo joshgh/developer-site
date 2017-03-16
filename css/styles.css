@@ -49,10 +49,12 @@ a, a:hover, a:visited {
 }
 
 .link--half-button {
+  display: inline-block;
   text-decoration: none;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   padding: 3px;
+  margin: 10px 0;
 }
 
 .link--half-button:hover {
