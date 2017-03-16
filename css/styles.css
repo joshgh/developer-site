@@ -90,3 +90,19 @@ form#contact-info {
   margin: 0 auto;
   text-align: left;
 }
+
+.logo {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  margin-right: 3px;
+}
+
+.logo--github-logo {
+  background-image: url('../images/GitHub-Mark-Light-64px.png');
+}
+
+.logo--linkedin-logo {
+  background-image: url('../images/In-White-66px-R.png');
+}
