@@ -24,7 +24,7 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
-a, a:hover {
+a, a:hover, a:visited {
   color: inherit;
   text-decoration: inherit;
 }
@@ -39,7 +39,7 @@ a, a:hover {
 }
 
 .main-content {
-  padding-top: 130px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 
