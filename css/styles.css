@@ -34,7 +34,7 @@ a, a:hover, a:visited {
   top: 0;
   width: 100%;
   padding-left: 10px;
-  background-color: black;
+  background-color: rgb(42,54,48);
   z-index: 1;
 }
 
@@ -55,6 +55,7 @@ a, a:hover, a:visited {
   border-right: 2px solid white;
   padding: 3px;
   margin: 10px 0;
+  width: 100px;
 }
 
 .link--half-button:hover {
@@ -62,7 +63,7 @@ a, a:hover, a:visited {
 }
 
 .link:hover {
-  background-color: black;
+  background-color: rgb(42,54,48);
   color: white;
 }
 
@@ -106,6 +107,10 @@ form#contact-info {
   text-align: left;
 }
 
+.glyphicon {
+  margin-right: 3px;
+}
+
 .logo {
   display: inline-block;
   height: 16px;
@@ -123,5 +128,6 @@ form#contact-info {
 }
 
 .project-card__title {
+  font-weight: bold;
   text-decoration: underline;
 }
