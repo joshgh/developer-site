@@ -189,7 +189,7 @@ form#contact-info {
 
 .project-bar ul {
   list-style: none;
-  display: inline;
+  display: inline-block;
   margin: auto;
   padding: 0;
 }
