@@ -112,7 +112,8 @@ a, a:hover, a:visited {
   border: 2px solid white;
   padding: 5px;
   margin: 10px;
-  width: 100px;
+  width: 105px;
+  white-space: nowrap;
 }
 
 .link:hover {
