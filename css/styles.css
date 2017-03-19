@@ -4,24 +4,80 @@
 
 html, body {
   width: 100%;
-  /*margin: 0;*/
-}
-
-html {
-  height: 100%;
-  background-image: url('../images/foggy-forest.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 body {
   min-height: 100%;
-  background: linear-gradient(to bottom, rgba(57, 189, 123, 0.85), rgba(57, 189, 123, 0.95));
   color: white;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Cabin', sans-serif;
+}
+
+hr {
+  border-top: 2px solid black;
+}
+
+.content-box {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.content-box--forest {
+  background-image: url('../images/foggy-forest.jpeg');
+}
+
+.content-box--beach {
+  background-image: url('../images/beach.jpg');
+  font-family: 'Raleway', sans-serif;
+}
+
+.content-box--mountain {
+  background-image: url('../images/mountain.jpg');
+}
+
+.content-box__gradient {
+  padding: 5px;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content-box__gradient--green {
+  background: linear-gradient(to bottom, rgba(11,60,38, 0.75), rgba(11,60,38, 1));
+}
+
+.content-box__gradient--tan {
+  background: linear-gradient(to bottom, rgba(162, 136, 102, 0.75), rgba(162, 136, 102, 1));
+  color: black;
+  font-weight: normal;
+}
+
+.content-box__gradient--blue {
+  background: linear-gradient(to bottom, rgba(0,0,153, 0.75), rgba(0,0,153, 1));
+}
+
+.with-titlebar {
+  padding-top: 140px;
+}
+
+.strip {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.strip--black {
+  background-color: black;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 10px;
 }
 
 a, a:hover, a:visited {
@@ -33,8 +89,10 @@ a, a:hover, a:visited {
   position: fixed;
   top: 0;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
-  background-color: rgb(42,54,48);
+  background-color: black;
   z-index: 1;
 }
 
@@ -44,26 +102,21 @@ a, a:hover, a:visited {
 }
 
 .link {
-  color: white;
+  color: inherit;
   cursor: pointer;
 }
 
-.link--half-button {
+.link--full-button {
   display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
-  padding: 3px;
-  margin: 10px 0;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 10px;
   width: 100px;
 }
 
-.link--half-button:hover {
-  text-decoration: none;
-}
-
 .link:hover {
-  background-color: rgb(42,54,48);
+  background-color: rgb(11,60,38);
   color: white;
 }
 
@@ -77,13 +130,16 @@ a, a:hover, a:visited {
 }
 
 .project-card {
-  border-bottom: 1px solid white;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: rgb(177, 156, 129);
+  margin: 10px;
   padding: 5px 15px;
-  transition: background-color 0.5s;
+  transition: background-color 0.3s;
 }
 
 .project-card:hover {
-  background-color: #298959;
+  background-color: rgb(197, 180, 160);
 }
 
 .profile-links {
@@ -128,6 +184,31 @@ form#contact-info {
 }
 
 .project-card__title {
-  font-weight: bold;
   text-decoration: underline;
+}
+
+.project-bar ul {
+  list-style: none;
+  display: inline;
+  margin: auto;
+  padding: 0;
+}
+
+.project-bar li {
+  padding: 3px 15px;
+  margin: 8px;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.project-bar li.active {
+  background-color: black;
+  color: white;
+}
+
+div.project-content {
+  display: none;
 }
