@@ -1,6 +1,0 @@
-<?php
-// copy this file to siteconfig.php, update values for smtp use
-$smtp_server = 'server address';
-$smtp_port = 'smtp port number';
-$smtp_username = 'smtp username';
-$smtp_password = 'smtp password';

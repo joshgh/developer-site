@@ -1,6 +1,5 @@
 <?php
 require dirname(__DIR__). '/vendor/autoload.php';
-// require __DIR__ . '/siteconfig.php';
 $siteconfig = parse_ini_file(dirname(__DIR__).'/config/siteconfig.ini');
 $smtp_server = $siteconfig['smtp_server'];
 $smtp_port = $siteconfig['smtp_port'];
