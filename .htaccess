@@ -9,3 +9,6 @@
   Require all denied
 </Files>
 
+<Files "siteconfig.ini">
+  Require all denied
+</Files>
