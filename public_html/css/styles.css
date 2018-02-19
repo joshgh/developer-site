@@ -14,10 +14,12 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   min-height: 100%;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
+  font-weight: 500;
 }
 
 .sidebar {
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav a {
   padding: 10px 15px;
-  font-size: 22px;
+  font-size: 20px;
   color: inherit;
   text-decoration: none;
   display: block;
@@ -68,8 +70,11 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 
+.viewport-height {
+  min-height: 100vh;
+}
+
 #intro-box {
-  height: 100vh;
   /* display: flex;
   justify-content: center;
   align-items:center; */
@@ -91,16 +96,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro-box__text {
   padding-left: 20px;
+  padding-right: 40px;
   border-left: 20px solid rgb(242,242,242);
-  width: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: calc(87.5% + 15px);
   height: auto;
-  margin-top: 12%;
-  margin-left: 45px;
-  transition: opacity 3s ease-in;
+  margin-top: 10%;
+  margin-left: 12.5%;
+  transition: opacity 2.5s ease-in;
+  background-color: rgba(26,26,26,0.6);
+  display: inline-block;
 }
 
 .intro-box__text-inner {
   padding-left: 20px;
+  display: inline-block;
+  width: auto;
+  height: auto;
 }
 
 .intro-box__text-inner--inner-1 {
@@ -111,13 +124,84 @@ h1, h2, h3, h4, h5, h6 {
 .intro-box__text-inner--inner-2 {
   border-left: 3px solid rgb(242,242,242);
   padding-left: 37px;
+  
 }
 
 .intro-box__text h1 {
   font-size: 64px;
   line-height: 1;
+  font-variant: small-caps;
+  letter-spacing: 0.0625em;
 }
 
-.intro-box__credit {
+.intro-box__credit, .about-box__credit, .contact-box__credit {
   display: none;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(26,26,26, 0.8); 
+}
+
+.about-box__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../images/drafting.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-box__content {
+  width: 75%;
+}
+
+.about-box__content p {
+  font-size: 18px;
+}
+
+.about-box__content > h2 {
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 5px solid rgb(242,242,242);
+  letter-spacing: 0.0625rem;
+}
+
+#about .vert-spacer {
+  height: 25px;
+}
+
+.skills-list {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.skills-list li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+#contact {
+  display: flex;
+  background-color: rgba(26,26,26, 0.8);
+}
+
+.contact-box__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../images/mailboxes.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
