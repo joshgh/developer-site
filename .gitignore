@@ -1,3 +1,5 @@
 vendor/
 **/siteconfig.php
 **/siteconfig.ini
+*.bak
+*~

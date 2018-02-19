@@ -1,4 +1,4 @@
-* {
+html, html * {
   box-sizing: border-box;
 }
 
@@ -6,210 +6,118 @@ html, body {
   width: 100%;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
+  color: white;
+  font-family: 'Roboto', sans-serif;
   min-height: 100%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'Cabin', sans-serif;
 }
 
-hr {
-  border-top: 2px solid black;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
-.content-box {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-}
-
-.content-box--forest {
-  background-image: url('../images/foggy-forest.jpeg');
-}
-
-.content-box--beach {
-  background-image: url('../images/beach.jpg');
-  font-family: 'Raleway', sans-serif;
-}
-
-.content-box--mountain {
-  background-image: url('../images/mountain.jpg');
-}
-
-.content-box__gradient {
-  padding: 5px;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.content-box__gradient--green {
-  background: linear-gradient(to bottom, rgba(11,60,38, 0.75), rgba(11,60,38, 1));
-}
-
-.content-box__gradient--tan {
-  background: linear-gradient(to bottom, rgba(162, 136, 102, 0.75), rgba(162, 136, 102, 1));
-  color: black;
-  font-weight: normal;
-}
-
-.content-box__gradient--blue {
-  background: linear-gradient(to bottom, rgba(0,0,153, 0.75), rgba(0,0,153, 1));
-}
-
-.with-titlebar {
-  padding-top: 140px;
-}
-
-.strip {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.strip--black {
+.sidebar {
   background-color: black;
-  margin-left: -5px;
-  margin-right: -5px;
-  padding: 10px;
+  height: 100vh;
+  min-width: 280px;
 }
 
-a, a:hover, a:visited {
-  color: inherit;
-  text-decoration: inherit;
+.header {
+  color: rgb(242,242,242);
+  background-color: rgb(26,26,26);
 }
 
-.titlebar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  background-color: black;
-  z-index: 1;
-}
-
-.main-content {
-  padding-top: 150px;
-  margin: 0 auto;
-}
-
-.link {
-  color: inherit;
-  cursor: pointer;
-}
-
-.link--full-button {
-  display: inline-block;
-  text-decoration: none;
-  border: 2px solid white;
-  padding: 5px;
-  margin: 10px;
-  width: 105px;
-  white-space: nowrap;
-}
-
-.link:hover {
-  background-color: rgb(11,60,38);
-  color: white;
-}
-
-.link--inline, .link--inline:hover {
-  text-decoration: underline;
-}
-
-.project-list {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.project-card {
-  border: 2px solid black;
-  border-radius: 3px;
-  background-color: rgb(177, 156, 129);
-  margin: 10px;
-  padding: 5px 15px;
-  transition: background-color 0.3s;
-}
-
-.project-card:hover {
-  background-color: rgb(197, 180, 160);
-}
-
-.profile-links {
-  margin-bottom: 10px;
-}
-
-img#qr-vcard {
-  width: 440px;
-  max-width: 100vmin;
-  height: auto;
-}
-
-input {
-  color: black;
-  font-family: sans-serif;
-}
-
-form#contact-info {
-  width: 60%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.glyphicon {
-  margin-right: 3px;
-}
-
-.logo {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  background-size: cover;
-  margin-right: 3px;
-}
-
-.logo--github-logo {
-  background-image: url('../images/GitHub-Mark-Light-64px.png');
-}
-
-.logo--linkedin-logo {
-  background-image: url('../images/In-White-66px-R.png');
-}
-
-.project-card__title {
-  text-decoration: underline;
-}
-
-.project-bar ul {
-  list-style: none;
-  display: inline-block;
-  margin: auto;
+.main-nav ul {
+  float: left;
   padding: 0;
+  margin: 0;
 }
 
-.project-bar li {
-  padding: 3px 15px;
-  margin: 8px;
-  color: black;
-  background-color: white;
-  display: inline-block;
-  border: 1px solid black;
-  cursor: pointer;
+.main-nav li {
+  list-style-type: none;
+  float: left;
 }
 
-.project-bar li.active {
-  background-color: black;
-  color: white;
+.main-nav a {
+  padding: 10px 15px;
+  font-size: 22px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
-div.project-content {
+.main-nav a:hover {
+  background-color: #ff5252;
+}
+
+.header__brand {
+  float: right;
+  font-size: 24px;
+}
+
+.header__text {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.reveal-at-load {
+  opacity: 0;
+}
+
+#intro-box {
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items:center; */
+  color: rgb(242,242,242);
+  background-color: rgba(26,26,26,0.4);
+  position: relative;
+}
+
+.intro-box__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../images/computer-with-mouse.jpg');
+  background-size: cover;
+}
+
+.intro-box__text {
+  padding-left: 20px;
+  border-left: 20px solid rgb(242,242,242);
+  width: auto;
+  height: auto;
+  margin-top: 12%;
+  margin-left: 45px;
+  transition: opacity 3s ease-in;
+}
+
+.intro-box__text-inner {
+  padding-left: 20px;
+}
+
+.intro-box__text-inner--inner-1 {
+  border-left: 10px solid rgb(242,242,242);
+  padding-left: 30px;
+}
+
+.intro-box__text-inner--inner-2 {
+  border-left: 3px solid rgb(242,242,242);
+  padding-left: 37px;
+}
+
+.intro-box__text h1 {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.intro-box__credit {
   display: none;
 }

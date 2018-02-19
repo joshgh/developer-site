@@ -5,17 +5,42 @@
     <title>Joshua Huffman Web Developer</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
+      <div class="row header">
+        <nav class="main-nav clearfix">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="header__brand"><h2 class="header__text">Joshua Huffman</h2></div>
+        </nav>
+      </div>
+      
       <div class="row">
-        <div class="col-sm-3 col-xs-hidden">
-          <h1>Joshua Huffman</h1>
-          <h2>Web Developer</h2>
-          <h3>Portland, Oregon</h3>
+        <div id="intro-box" class="col-xs-12">
+          <div class="intro-box__text reveal-at-load">
+            <div class="intro-box__text-inner intro-box__text-inner--inner-1">
+              <div class="intro-box__text-inner intro-box__text-inner--inner-2">
+                <h1>Joshua Huffman</h1>
+                <h2>Website and Web Application Development</h2>
+                <h2>Portland, Oregon</h2>
+              </div>
+            </div>
+          </div>
+          <div class="intro-box__background"></div>
+          <div class="intro-box__credit"><p>Photo by Rayi Christian Wicaksono on Unsplash</p></div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-9">
@@ -42,6 +67,7 @@
         <p>This website is a Q&amp;A message board applications. Users are able to post questions to the message board and other users are able to post answers. This project was created as a single page application using Ember.</p>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
