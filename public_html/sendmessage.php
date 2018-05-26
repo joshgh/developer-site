@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $submitted_message = $_POST['form_message'];
 
        // Create the Transport
-       $transport = Swift_SmtpTransport::newInstance($smtp_server, $smtp_port, 'tls')
+       $transport = Swift_SmtpTransport::newInstance($smtp_server, $smtp_port, 'ssl')
          ->setUsername($smtp_username)
          ->setPassword($smtp_password)
          ;
