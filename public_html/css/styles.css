@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
   text-decoration: none;
   display: block;
+  line-height: 33px;
 }
 
 .main-nav a:hover {
@@ -98,11 +99,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
   padding-right: 40px;
   border-left: 20px solid rgb(242,242,242);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   width: calc(87.5% + 15px);
   height: auto;
   margin-top: 10%;
+  margin-bottom: 15px;
   margin-left: 12.5%;
   transition: opacity 2.5s ease-in;
   background-color: rgba(26,26,26,0.6);
@@ -179,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills-list {
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -190,7 +192,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact {
-  display: flex;
   background-color: rgba(26,26,26, 0.8);
 }
 
@@ -204,4 +205,51 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('../images/mailboxes.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.contact-box__content {
+  max-width: 480px;
+  margin: auto;
+}
+
+#contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.0625em;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-box__text {
+    margin-left: 0;
+    width: calc(100% + 15px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro-box__text h1 {
+    font-size: 52px;
+  }
+
+  .intro-box__text h2 {
+    font-size: 24px;
+  }
+
+  .intro-box__text-inner--inner-2 {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .header__brand {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .intro-box__text-inner--inner-1 {
+    border-left: none;
+    padding-left: 0;
+    
+  }
 }

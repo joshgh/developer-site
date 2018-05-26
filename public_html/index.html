@@ -18,10 +18,7 @@
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <div class="header__brand"><h2 class="header__text">Joshua Huffman</h2></div>
@@ -49,14 +46,12 @@
             <h2>About</h2>
             <p>I am a full stack web developer who enjoys working on projects of all sizes.</p>
             <p>From simple landing pages to complex line of business applications I can help to make your ideas a reality.</p>
-            <p>Working to understand a problem domain and incorporating that knowledge into the business logic of an application is my favorite part of the job.</p>
           </div>
           <div class="vert-spacer"></div>
           <div class="about-box__content">
             <h2>Technologies</h2>
-            <p>I can comfortably work on both the front end and back end of web projects.</p>
-            <p>The title front end developer can be a little nebulous, my interests and skills skew more towards implementing designs and making things work rather than the actual graphic design aspect.</p>
-            <p>There are many ways to do most things in web development and I believe that the functionality of an application is more important than the languages and frameworks used to create it. That being said, the following technologies are those which I have the most experience with and feel most productive using:</p>
+            <p>I am comfortable working on both the back end and front end of web projects.</p>
+            <p>There are multiple ways to accomplish most things in web development and I believe that the functionality of an application is more important than the languages and frameworks used to create it. That being said, these are the technologies which I have the most experience with:</p>
             <div class="row">
               <div class="col-sm-4">
                 <ul class="skills-list">
@@ -78,8 +73,8 @@
                 <ul class="skills-list">
                   <li>HTML</li>
                   <li>CSS</li>
-                  <li>Bootstrap</li>
                   <li>JavaScript</li>
+                  <li>Bootstrap</li>
                   <li>jQuery</li>
                   <li>Ajax</li>
                 </ul>
@@ -111,10 +106,10 @@
         <div id="contact" class="col-xs-12 viewport-height">
           <div class="contact-box__content">
             <h2>Contact Me</h2>
-            <p>Github Page</p>
-            <p>LinkedIn Profile</p>
+            <p><a href="https://github.com/joshgh">Github Page</a></p>
+            <p><a href="https://www.linkedin.com/in/joshua-huffman/">LinkedIn Profile</a></p>
             <p>Or send me a message from here:</p>
-            <form id="contact" method="post" action="sendmessage.php">
+            <form id="contact-form" method="post" action="sendmessage.php">
               <div class="form-group">
                 <label for="form_name">Your name:</label>
                 <input id="form_name" class="form-control" name="form_name">
@@ -125,7 +120,7 @@
               </div>
               <div class="form-group">
                 <label for="form_message">Your message:</label>
-                <input id="form_message" class="form-control" name="form_message">
+                <textarea id="form_message" class="form-control" name="form_message"></textarea>
               </div>
               <input style="display:none" name="message">
               <input class="btn btn-primary" type="submit" value="Submit">
@@ -136,29 +131,6 @@
             <p>Photo by Mathyas Kurmann on Unsplash</p>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <div id="bridge-hero"></div>
-        <p>I enjoy building web applications which enable other people to perform their jobs more effectively or enjoyably. I like to come up with creative solutions to remove friction from processes.</p>
-        <h2>Professional Work</h2>
-        <p>symfony, codeigniter, drupal, wordpress</p>
-        <h2>Personal Hobby Projects</h2>
-        <div class="row">
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-8">
-            <h3>River Guide</h3>
-          </div>
-        </div>
-        <p>This website was created to serve as a resource for accessing current river information when choosing a place to go whitewater boating. It uses external APIs to access current weather at the river from OpenWeatherMap, current water levels from the US Geological Survey, and directions to the river from Google Maps. This project is built using Drupal 7.</p>
-        <div class="row">
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-8">
-            <h3>Message Board</h3>
-          </div>
-        </div>
-        <p>This website is a Q&amp;A message board applications. Users are able to post questions to the message board and other users are able to post answers. This project was created as a single page application using Ember.</p>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
