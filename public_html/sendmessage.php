@@ -5,6 +5,8 @@ $smtp_server = $siteconfig['smtp_server'];
 $smtp_port = $siteconfig['smtp_port'];
 $smtp_username = $siteconfig['smtp_username'];
 $smtp_password = $siteconfig['smtp_password'];
+$mail_to_address = $siteconfig['mail_to_address'];
+$mail_from_address = $siteconfig['mail_from_address'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    if (isset($_POST['form_email']) && isset($_POST['form_name'])){
@@ -32,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
        // Create a message
        $message = Swift_Message::newInstance('Homepage Contact')
-         ->setFrom(array('j.m.huffman@gmail.com' => 'Joshua Huffman'))
-         ->setTo(array('j.m.huffman@gmail.com' => 'Joshua Huffman'))
+         ->setFrom(array($mail_from_address => 'Joshua Huffman'))
+         ->setTo(array($mail_to_address => 'Joshua Huffman'))
          ->setBody("Someone sent you a message through your portfolio form.".PHP_EOL." It is from ". $submitted_name . " at " . $submitted_email.PHP_EOL.$submitted_message, 'text/plain')
          ;
 
